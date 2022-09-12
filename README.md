@@ -8,3 +8,7 @@ Atividades/Exemplos de códigos da aula de Programação Orientada a Objeto da F
 <h2>Exercícios 2</h2>
 <h6>1. MathServlet, que responda uma página com o resultado de uma operação aritmética (soma, subtração, multiplicação ou divisão) a partir de 2</h6>
 <h6>2. RandomServlet, que responda uma página com uma tabela de N números aleatórios conforme parâmetro informado pelo usuário.</h6>
+
+<h2>Exercícios 3</h2>
+<h6>1. </h6>
+<h6>2. </h6>
