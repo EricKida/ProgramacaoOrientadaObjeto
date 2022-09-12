@@ -10,5 +10,4 @@ Atividades/Exemplos de códigos da aula de Programação Orientada a Objeto da F
 <h6>2. RandomServlet, que responda uma página com uma tabela de N números aleatórios conforme parâmetro informado pelo usuário.</h6>
 
 <h2>Exercícios 3</h2>
-<h6>1. </h6>
-<h6>2. </h6>
+<h6>1. Uma página inicial chamada index.html com um link para uma requisição que retorne um arquivo xml e outro link para uma requisição que retorna um arquivo JSON</h6>
