@@ -1,0 +1,45 @@
+<%-- any content can be specified here e.g.: --%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%>
+<%@ page pageEncoding="UTF-8" %>
+<body>
+    <h3 class="text-center">
+        <%
+            int dia = Integer.parseInt((new SimpleDateFormat("dd")).format(new Date()));
+            int mes = Integer.parseInt((new SimpleDateFormat("MM")).format(new Date()));
+            int ano = Integer.parseInt((new SimpleDateFormat("yyyy")).format(new Date()));
+            String mest = "";
+            if (mes == 1) {
+                mest = "Janeiro";
+            } else if (mes == 2) {
+                mest = "Fevereiro";
+            } else if (mes == 3) {
+                mest = "Março";
+            } else if (mes == 4) {
+                mest = "Abril";
+            } else if (mes == 5) {
+                mest = "Maio";
+            } else if (mes == 6) {
+                mest = "Junho";
+            } else if (mes == 7) {
+                mest = "Julho";
+            } else if (mes == 8) {
+                mest = "Agosto";
+            } else if (mes == 9) {
+                mest = "Setembro";
+            } else if (mes == 10) {
+                mest = "Outubro";
+            } else if (mes == 11) {
+                mest = "Novembro";
+            } else if (mes == 12) {
+                mest = "Dezembro";
+            } else {
+                mest = "Fim dos Tempos";
+            }
+            out.println("<br>Hoje é dia " + dia + " de " + mest + " de " + ano);
+        %>
+    </h3>
+    <div class="col-sm-12 text-center pt-5">
+        <a href="index.html" class="btn btn-outline-dark">Voltar</a>
+    </div>
+</body>
