@@ -1,0 +1,8 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+        <div class="container text-center">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">Eric Kida Meneses Corrêa</p>
+                <p class="col-md-4 mb-0 text-muted">1290482112044</p>
+            </footer>
+        </div>
