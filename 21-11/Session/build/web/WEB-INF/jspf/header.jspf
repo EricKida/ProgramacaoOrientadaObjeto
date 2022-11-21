@@ -1,0 +1,55 @@
+<%@ page pageEncoding="UTF-8" %>
+<%
+    if (request.getParameter("login-form") != null) {
+        String user = request.getParameter("login-user");
+        session.setAttribute("login-user", user);
+        response.sendRedirect(request.getRequestURI());
+    } else if (request.getParameter("logout-form") != null) {
+        session.removeAttribute("login-user");
+        response.sendRedirect(request.getRequestURI());
+    }
+    String sessionLoginUser = (String) session.getAttribute("login-user");
+
+%>
+
+<div class="col-sm-4 container-fluid">
+    <div class="row text-center">
+        <h1>Controle de Sessão</h1>
+    </div>
+
+    <%if (sessionLoginUser == null) { %>
+    <form>
+        <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input class="form-control bg-dark text-light" type="text" name="login-user" placeholder="Nome de Usuário"/ required>
+            <div class="text-center">
+                <input type="submit" class="btn btn-success mt-3" id="btn" name="login-form" value="Entrar"/>
+            </div>
+        </div>
+    </form>
+
+    <%} else {%>
+    <form>
+        <h4 class="text-center">Bem vindo</h4>
+        <h2 class="text-center"><%= sessionLoginUser%></h2>
+        <div class="text-center">
+            <input class="btn btn-danger mt-3" id="btn" type="submit" name="logout-form" value="Sair"/>
+        </div>
+    </form>
+    <%}%>
+</div>
+
+<style>
+    
+#btn{
+    width: 40%;
+    transition: 0.3s ease;
+}
+#btn:hover{
+    width: 50%;
+    transition: 0.3s ease;
+}
+    
+</style>
+
+lorem
